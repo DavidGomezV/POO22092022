@@ -67,6 +67,12 @@ private int releaseDate;
     public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
-
- 
+    
+    public void cambiarPagina(){
+        System.out.println("cambiando a la siguiente de pagina");
+       
+    }
+    public void regresarPagina(){
+        System.out.println("regresando pagina");
+    }
 }
