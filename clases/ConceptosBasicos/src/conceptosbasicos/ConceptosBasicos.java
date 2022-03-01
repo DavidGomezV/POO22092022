@@ -4,6 +4,11 @@
  */
 package conceptosbasicos;
 
+import ico.fes.Automovil;
+import ico.fes.Foco;
+import ico.fes.Silla;
+import java.awt.Color;
+
 /**
  *
  * @author david
@@ -16,6 +21,26 @@ public class ConceptosBasicos {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Hola de nuevo");
+        Silla s1 =new Silla();
+        System.out.println(s1);
+        System.out.println(s1.toString());
+        
+        Automovil miBocho = new Automovil();
+        miBocho.setMarca("VW");
+        miBocho.setSubMarca("Sedan");
+        miBocho.setModelo(1970);
+        miBocho.setColor(Color.blue);
+        
+        System.out.println(miBocho);
+        
+        Automovil miMustang =new Automovil("Ford", "Mustang", Color.yellow, 2010);
+        System.out.println(miMustang);
+        
+        Automovil miAkura = new Automovil("Akura", "NSX", Color.gray, 2013);
+        System.out.println(miAkura);
+        
+        
+        
     }
     
 }
