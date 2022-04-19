@@ -50,7 +50,16 @@ public class Alumno extends Persona {
     public void estudiar(int cantidad){
         System.out.println(this.getNombre()+"está estudiando"+cantidad);
     }
+    @Override
+    public void dormir(){
+        System.out.println("el estudiante"+this.getNombre()+"esta durmiendo");
+    }
     
+    public void dormir( int horasEstudio ){
+        int horasDormir = 8;
+        System.out.println( this.getNombre() 
+                + " esta duermiendo " + (horasDormir - horasEstudio) + " Horas" );
+    }
     
     
     
