@@ -85,7 +85,7 @@ public class JavaBasico2209 {
         edades[0]=10;
         System.out.println("la primer edad es"+edades[0]);
         
-        //declarar e inicializar en un adola lnea
+        //declarar e inicializar en una sola lnea
         int[]estaturas = new int[5];
         //se puede asignar directamnete
         int[]pesos = {89,88,56,76,77};
