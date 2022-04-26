@@ -4,6 +4,7 @@
  */
 package javabasico2209;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -123,8 +124,38 @@ public class JavaBasico2209 {
         for (Alumno alumno : lista) {
             System.out.println(alumno.evaluarDesempenio());
         }
+    
+        ArrayList<Alumno> grupo2209= new ArrayList <Alumno>();
+        grupo2209.add(new Alumno("9999", 2, 8.7f));
+        grupo2209.add(new Alumno("8888", 2, 6.7f));
+        grupo2209.add(new Alumno("9777", 2, 8.7f));
+        grupo2209.add(new Alumno("6666", 2, 3.7f));
+        grupo2209.add(new Alumno("5555", 2, 5.7f));
         
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
             
+        grupo2209.add(2, new Alumno("8111", 2, 9.9f));
+        
+        Alumno tmp = grupo2209.get(1);
+        System.out.println("para sacar uno del index");
+        System.out.println(tmp);
+        Alumno tmp2 = grupo2209.remove(1);
+        System.out.println("elemento sacado:"+tmp2);
+        System.out.println("remplazar el iesimo elemento");
+        Alumno tmp3=grupo2209.set(0, new Alumno("4444", 4, 9.9f));
+        System.out.println(tmp3);
+        
+        try {
+            System.out.println("excepciones");
+        System.out.println(grupo2209.get(20));
+            
+        } catch (Exception e) {
+            System.out.println("error, revisa los indices");
+        }
+        
     }
+    
     
 }
