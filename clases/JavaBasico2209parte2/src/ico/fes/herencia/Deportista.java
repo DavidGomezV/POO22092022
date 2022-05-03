@@ -2,16 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package ico.fes;
+package ico.fes.herencia;
 
 /**
  *
  * @author david
  */
-public interface Figura {
-    public abstract float calcularArea();
-    public static final float PI= 3.1416F;
-    public static final int CUADRADO = 1;
-    
+public interface Deportista {
+    public abstract void entrenar();
+    public abstract void jugar();
     
 }
