@@ -74,7 +74,7 @@ public class VentanaCifrado extends JFrame {
 
         });
 
-        this.addMouseListener(new MouseAdapter() {
+        this.boton1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 char caracter;
