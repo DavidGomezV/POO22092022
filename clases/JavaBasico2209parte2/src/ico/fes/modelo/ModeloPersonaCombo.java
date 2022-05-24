@@ -64,11 +64,16 @@ public class ModeloPersonaCombo implements ComboBoxModel<Persona>{
     }
     public void ConsultarBaseDeDatos(){
         datos=new ArrayList<Persona>();
+    //se conecta con la db
         //se consulta base de datos sql
         datos.add(new Persona("david", 17));
         datos.add(new Persona("bryan", 19));
         datos.add(new Persona("rodrigo", 18));
         datos.add(new Persona("felope", 20));
+    }
+    public void agragarPersona(Persona p){
+        //insert a base de datos
+        datos.add(p);
     }
     
     
