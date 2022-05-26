@@ -18,8 +18,15 @@ public class TestSQLite {
             conexion = DriverManager.getConnection(url);
             System.out.println("Conexión establecida...");
             Statement stm = conexion.createStatement();
-            //stm.execute("CREATE TABLE prueba1(nombre VARCHAR(10) , telefono VARCHAR(15) );");
-               stm.execute(" INSERT INTO prueba1 VALUES('Diana','4455677')");
+           // stm.execute("CREATE TABLE prueba1(nombre VARCHAR(10) , telefono VARCHAR(15) );");
+           //stm.execute(" INSERT INTO prueba1 VALUES('Diana','4455677')");
+           
+           ResultSet rst= stm.executeQuery("SELECT * FROM prueba1;");
+           
+           while(rst.next()){
+               System.out.println("Nombre: "+ rst.getString(1));
+               System.out.println("Telefono: "+rst.getString(2));
+           }
         } catch (SQLException e) {
             e.printStackTrace();
         }
